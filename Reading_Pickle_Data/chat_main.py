@@ -129,7 +129,7 @@ def main():
     THREAD_ID = "thread_0du078hnyl1z7AbIM7JyebsX"
 
     try:
-        df = load_data("data")
+        df = load_data("./Reading_Pickle_Data/data")
         if df.empty:
             st.error("The loaded dataset is empty. Please check your data source.")
             return
