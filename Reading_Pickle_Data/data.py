@@ -1,11 +1,11 @@
-import pickle
 from pathlib import Path
 import pandas as pd
 import streamlit as st
+import fickling
 
 def load_file(path: str) -> pd.DataFrame:
     with open(path, 'rb') as f:
-        dataset = pickle.load(f)
+        dataset = fickling.load(f)
         return dataset
 
 @st.cache_data
